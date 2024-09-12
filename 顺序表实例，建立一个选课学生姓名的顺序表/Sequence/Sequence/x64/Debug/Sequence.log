@@ -1,0 +1,6 @@
+﻿  main.cpp
+E:\myscu\大二上\数据结构算法\顺序表实例，建立一个选课学生姓名的顺序表\Sequence\main.cpp(8,1): warning C4005: “OVERFLOW”: 宏重定义
+  D:\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(975,1):
+  参见“OVERFLOW”的前一个定义
+  
+  Sequence.vcxproj -> E:\myscu\大二上\数据结构算法\顺序表实例，建立一个选课学生姓名的顺序表\Sequence\x64\Debug\Sequence.exe

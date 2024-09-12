@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u7B97\u6CD5\\\u590D\u6570\\Complex\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F62103D-F05F-4B85-B72E-9AAB0459D181}|Complex.vcxproj|E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u7B97\u6CD5\\\u590D\u6570\\Complex\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F62103D-F05F-4B85-B72E-9AAB0459D181}|Complex.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 342,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u7B97\u6CD5\\\u590D\u6570\\Complex\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u7B97\u6CD5\\\u590D\u6570\\Complex\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAACwAAAAAAAAAAAAYwEMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-05T02:15:16.437Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
