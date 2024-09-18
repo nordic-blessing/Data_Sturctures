@@ -1,0 +1,360 @@
+#include<iostream>
+#include<string>        //用于定义字符串类型变量
+#include<iomanip>       //用于控制输出格式，目前暂时还用不到
+#include<cctype>
+using namespace std;
+
+/*******以下是宏定义***************************/
+
+#define OK 1         //函数结果状态码,表示函数功能执行成功
+#define ERROR 0      //函数结果状态码,表示函数功能执行失败
+					 //如果用bool型变量(取值:true,false)，可以不用宏定义OK和ERROR,这里我们与教材保持一致，不采用
+
+#define OVERFLOW -1  //函数结果状态码,表示函数执行时溢出
+					//（注意VS对OVERFLOW已经做了宏定义,这里是重定义，加这条是为了与教材保持一致）
+
+//#define ElemType Student //数据元素类型（根据实际需要确定，此例为Student型，内含多个数据项）
+
+
+#define MAXSIZE  5  //顺序表的最大长度（应根据实际需要确定此值）
+
+#define Status int   //Status是函数返回值类型，其值是函数结果状态代码(可根据实际需要选择Status代表的数据类型，此例为int型)
+
+/****************Status也可以如下方式定义***************************************/
+//typedef int Status; //Status是函数返回值类型，其值是函数结果状态代码(可根据实际需要选择Status代表的数据类型，此例为int型)
+
+/********定义（设计）数据存储结构类型********************/
+typedef struct
+{
+	int Snumber;  //学号
+	string name;  //姓名
+	string major; //专业
+}Student;
+
+
+typedef struct SqList //用typedef（类型定义）描述结点的数据存储结构(是一个结构体，名字自定，这里将它取名为SqList,即顺序表的英文缩写)
+{
+	Student* e;      //e为Student型数据元素存储地址指针，保存的是Student型结构体数组*e的基地址
+	int length;      //顺序表中的实际结点数量（即实际选课学生数量，0 =< length =< MAXSIZE ）
+
+}SqList;   //以后可以用SqList作为此自定义类型的类型名,用来定义变量，如将x定义为SqList类型：Sqlist x; x就成为此结构体类型的变量
+
+
+
+/******************************************/
+
+int main() {
+	//定义的基本操作：
+	Status InitList(SqList & L);                     //函数声明，基本操作1：初始化（构造一个空的顺序表L）
+	Status CreateList(SqList & L);                   //函数声明，基本操作2：创建（把学生名单输入顺序表L）
+	Status GetElem(SqList L, int i, Student & e);
+	int LocateElem(SqList L, string e);
+	Status ListInsert(SqList & L, int i, Student e);
+	Status ListDelete(SqList & L, int i);
+
+
+	//======================================================================================
+	void Choose_num(int& choose); //函数声明，提示并选择输入操作编号
+
+	SqList L;            //定义一个变量L，L为SqList类型（即L是一个SqList型结构体变量，内部有两个基本型变量成员：e和length）
+
+
+
+	int i = 1;   //计数器
+	char temp;  //临时辅助字符变量,用于清除输入错误
+
+	Student student_data;  //定义Student类型的结构体变量student_data	
+
+	string name;         //定义姓名字符串变量(用于查找操作，输入需要查找的学生姓名)
+
+	int flag_init = 0;   //顺序表初始化标志，0:未初始化,1:已初始化
+	int flag_create = 0; //顺序表创建标志 0:未创建，1:已创建
+
+	int choose;          //定义基本操作选择编号
+	choose = -1;         //初始化选择的编号为-1（实际无此编号）
+
+
+	while (choose != 0)
+	{
+
+		Choose_num(choose);  //提示并选择输入操作编号
+
+		if (!cin)            //判断输入是否为数字
+		{
+			cout << "\n输入操作选择编号非数字!请重新输入\n";
+			cin.clear();  //清除缓冲区错误标志		  
+			while ((temp = getchar()) != '\n');  //将输入到缓冲区的数字一个一个抹去，直到换行符为止,也可用cin.ignore(a,'\n')
+			choose = -1;
+			continue;
+		}
+
+
+		switch (choose)
+		{
+		case 0: break;  //退出
+
+		case 1: //初始化
+			if (InitList(L)) // 构造一个空的顺序表L（初始化顺序表）
+			{
+				flag_init = 1; cout << "\n初始化成功!\n\n";
+			} //设置初始化成功标志
+			else
+				cout << "\n初始化失败!\n\n";
+			break;
+
+		case 2: //创建
+			if (!flag_init) { cout << "\n尚未初始化\n"; break; }
+			if (flag_create) {
+				cout << "\n已创建，是否重新创建？若是，请输入Y >";
+				char answer;
+				cin >> answer;
+				if (answer == 'y' || answer == 'Y');
+				else break;
+			}
+			CreateList(L);   //把学生名单输入此顺序表L（创建顺序表）
+			if (L.length)
+				flag_create = 1; //创建成功标志
+			else
+				flag_create = 0;
+			break;
+
+		case 3:  //取值
+			if (!flag_create) { cout << "尚未建表"; break; }
+			cout << "请输入取值序号i:";
+			{
+				int i;
+				Student e;
+				cin >> i;
+
+				if (GetElem(L, i, e)) {
+					cout << left << setw(15) << "学 号" << "\t"
+						<< left << setw(15) << "姓 名" << "\t"
+						<< left << setw(15) << "专 业" << endl;
+					cout << left << setw(15) << e.Snumber << "\t"
+						<< left << setw(15) << e.name << "\t"
+						<< left << setw(15) << e.major << endl;
+					cout << endl;
+				}
+				else {
+					cout << "\n输入序号不存在！\n";
+				}
+			}
+			break;
+
+		case 4:   //查找
+		{
+			cout << "请输入姓名：";
+			Student e;
+			cin >> e.name;
+			if (LocateElem(L, e.name)) {
+				cout << "\n查到 " << e.name << " 序号：" << LocateElem(L, e.name) + 1;
+			}
+			else
+				cout << "\n未查到";
+		}
+		break;
+
+			break;
+
+		case 5:   //插入
+		{
+			Student e;
+			int i;
+			cout << "请输入插入位置：";
+			cin >> i;
+			cout << "请输入 学号  姓名  专业 (空格间隔，回车输入,“0”放弃):\n\n";
+			cin >> e.Snumber >> e.name >> e.major;
+			if (ListInsert(L, i, e)) {
+				cout << "\n插入成功\n";
+			}
+			else {
+				cout << "\n插入失败\n";
+			}
+		}
+			break;
+
+		case 6:   //删除			     
+		{
+			int i;
+			cout << "请输入要删除姓名的序号：";
+			cin >> i;
+			if (ListDelete(L, i)) {
+				cout << "\n删除成功!\n";
+			}
+			else {
+				cout << "\n表中无此序号！\n";
+			}
+		}
+			break;
+
+		case 7:   //输出
+			if (!flag_create) { cout << "\n尚未建表\n"; break; }
+			cout << "\n选课学生名单(共" << L.length << "名):\n";
+			cout << left << setw(15) << "学 号" << "\t"
+				<< left << setw(15) << "姓 名" << "\t"
+				<< left << setw(15) << "专 业" << endl;
+
+			for (i = 0; i < L.length; i++)
+			{
+				cout << left << setw(15) << L.e[i].Snumber << "\t"
+					<< left << setw(15) << L.e[i].name << "\t"
+					<< left << setw(15) << L.e[i].major << endl;
+			}
+			break;
+
+
+		default:  cout << "\n输入编号错误!\n ";
+
+		}//switch
+
+	}//while
+
+	return 0;
+}//main
+/***********************/
+/***********************/
+void Choose_num(int& choose)  //提示并选择输入操作编号
+{
+	cout << "\n《数据结构与算法》选课名单的相应操作:\n";
+	cout << " 1.初始化 2.创建  3.取值  4.查找\n"
+		<< " 5.插入   6.删除  7.输出  0.退出\n";
+	cout << "\n请输入选择的操作编号: ";
+
+	cin >> choose;   //输入选择的基本操作编号	
+}
+
+
+/************以下是供主函数调用的基本操作函数(实现线性表抽象数据类型定义的各种基本操作)***********************/
+/*************************************************************************************************************/
+//基本操作1：初始化（构造一个空的顺序表）
+Status InitList(SqList& L)  //自定义的函数，实现抽象数据类型中定义的操作：初始化。可参考教材P21
+{  // 构造一个空的线性表L，L在主函数中定义， "&"的意思是这里是引用，函数内部改变L的值，返回主函数后，在主函数里其改变仍然有效           
+   //L前面如果不加&，此函数内部改变L，跳出此函数后就会无效，有同学都毕业了还搞不清楚这点，要概念清晰，切记。
+
+	L.e = new Student[MAXSIZE]; //为顺序表分配一个大小为MAXSIZE（此例是100）的数组空间,并把起始地址赋给表L的成员e(e是指针型变量，其值是地址)
+	if (!L.e) return ERROR;     //分配失败（比如内存空间不足），返回结果状态码ERROR,即Status=ERROR(即Status=0)
+	L.length = 0;              //分配成功，目前还没有创建学生数据，学生数量初始化为0
+	return OK;                 //返回分配成功状态码，即Status=OK(即Status=1)
+}
+
+/***********************************************************************************************************/
+
+//基本操作2：创建（把学生名单输入此线性表）
+Status CreateList(SqList& L)  //把学生名单输入此顺序表L
+{
+	//  int student_number;//定义输入学号变量
+   //string student_name;  //定义输入姓名变量
+   //string student_major; //定义输入专业变量
+
+
+
+	L.length = 0; //可思考有没有这条语句的差异
+	int i = 0; //定义计数器i，记录学生信息存储位置，初始化为0（起始位置，第1个学生信息存放在“位置0”,第i个学生信息存放在位置"i-1"，切记）
+
+	cout << "请输入 学号  姓名  专业 (空格间隔，回车输入, 0退出):\n\n";
+
+	while (1)
+	{
+		if (L.length == MAXSIZE) { cout << "\n课程教室容量已满!不能继续输入。"; return ERROR; }   //“return ERROR;”可改为“exit(OVERFLOW);”
+
+		//输入:学号、姓名、专业
+		cin >> L.e[i].Snumber;
+		if (!cin)
+		{
+			cout << "\n学号输入错误，请重新输入\n";
+			cin.clear();  //清除缓冲区错误标志		  
+			cin.ignore(500, '\n');  //将输入到缓冲区的数字一个一个抹去，直到换行符为止		  
+			continue;
+		}
+		if (L.e[i].Snumber == 0) break; //=0 means 退出	
+
+		cin >> L.e[i].name;
+		if (!cin)
+		{
+			cout << "\n姓名输入错误，请重新输入\n";
+			cin.clear();  //清除缓冲区错误标志		  
+			cin.ignore(500, '\n');  //将输入到缓冲区的数字一个一个抹去，直到换行符为止		  
+			continue;
+		}
+		if (L.e[i].name == "0") break; //="0" means 退出
+
+		cin >> L.e[i].major;
+		if (!cin)
+		{
+			cout << "\n专业输入错误，请重新输入\n";
+			cin.clear();  //清除缓冲区错误标志		  
+			cin.ignore(500, '\n');  //将输入到缓冲区的数字一个一个抹去，直到换行符为止		  
+			continue;
+		}
+		if (L.e[i].major == "0") break; //="0" means 退出		   
+
+		L.length++;  //顺序表长度加1（即实际选课学生数量加1）
+		i++;         //e数组下标加1           
+
+	}
+	if (L.length)
+		cout << "\n建表完成!\n";
+	else
+		cout << "\n退出建表\n";
+	return OK;
+}
+
+/**************下面为此顺序表尚未实现的基本操作****************************************************/
+/************************************************************************************************/
+//基本操作3：取值（ 根据给定的序号，获取该序号的学生信息）
+//这段同学们在实验中写，并相应修改主函数,在某种情况下调用此函数
+Status GetElem(SqList L, int i, Student & e) {
+	if (i<1 || i>L.length)
+		return ERROR;
+	e.name = L.e[i - 1].name;
+	e.major = L.e[i - 1].major;
+	e.Snumber = L.e[i - 1].Snumber;
+	return OK;
+}
+
+/************************************************************************************************/
+//基本操作4：查找（ 根据给定学生姓名，查找该名学生是否在表中，并返回查找结果）
+//这段同学们在实验中写，并相应修改主函数,在某种情况下调用此函数
+int LocateElem(SqList L, string name) {
+	int i;
+	for (i = 0; i < L.length; i++) {
+		if (L.e[i].name == name)
+			return i+1;
+		return 0;
+	}
+}
+
+
+/************************************************************************************************/
+//基本操作5：插入（将新增学生信息插入表中指定位置）
+//这段同学们在实验中写，并相应修改主函数,在某种情况下调用此函数
+Status ListInsert(SqList& L, int i, Student e) {
+	if ((i < i) || (i > L.length + 1))
+		return ERROR;
+	if (L.length == MAXSIZE)
+		return OVERFLOW;
+	for (int j = L.length - 1; j >= i - 1; j--)
+		L.e[j + 1] = L.e[j];
+	L.e[i - 1] = e;
+	L.length++;
+	return OK;
+}
+
+
+/************************************************************************************************/
+//基本操作6：删除（ 在表中将该生信息删除）
+//这段同学们在实验中写，并相应修改主函数,在某种情况下调用此函数
+Status ListDelete(SqList& L, int i) {
+	if ((i < 1) || (i > L.length))
+		return ERROR;
+	for (int j = i; j <= L.length; j++)
+		L.e[j - 1] = L.e[j];
+	L.length--;
+	return OK;
+}
+
+
+
+
+
+/*****************************/

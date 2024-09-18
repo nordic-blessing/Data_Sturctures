@@ -1,0 +1,145 @@
+//实验题目3：链式有序表的合并
+//两个有序表数据分别保存在硬盘某文件夹内的文件ListA.txt和ListB.txt中，利用算法2.17 链式有序表的合并，将其合并为一个有序表ListC.txt
+
+
+/*要求：
+
+  0.1 实验开始前，在非系统盘新建一个文件夹,将本实验发给的两个文件：ListA.txt和ListB.txt复制到该文件夹内；
+  0.2 可先参考发的实验题目3-效果演示.exe
+
+  1.编写：单链表初始化操作;
+  2.编写：算法2.17 链式有序表的合并
+  3.调试和测试
+  4.将实验过程与结果按要求写入实验报告
+*/
+
+#include<iostream>
+#include<fstream>
+#include<string>
+using namespace std;
+#define ERROR 0
+
+typedef struct LNode //定义单链表
+{
+	int data;
+	struct LNode *next;
+
+} LNode, *LinkList;
+
+char st = 'A';
+string filename;  //保存数据的文件路径及文件名
+
+void InitList_L(LinkList &L) //单链表初始化
+{
+	
+	//要求编写此段
+
+}
+
+void input(LinkList &L, string &filename) //依次往单链表L里输入数据
+{
+
+	LNode *p, *r;  //链表结点指针,p指向生成的新结点,r指向链表尾结点
+	r = L;         //r初始化指向链表头结点(此时头结点即尾结点)
+ input_start:
+	cout << "请输入非递减线性表" << st << "的数据文件路径和名称（如D:\\数据结构实验-自动化\\List" << st << ".txt）：" << endl;
+	//输入文件路径及文件名，如：D:\数据结构2021级实验\链式有序表\ListA.txt
+	
+	cin >> filename;
+
+	fstream file;
+	file.open(filename);
+	if (!file) {
+		cout << "未找到相关文件，无法打开！" << endl;
+		//exit(ERROR);  //此句与下面一句只能二选一，一般采用此句。但考虑到节约实验时间，采用下面一句
+		goto input_start;
+	}
+	while (!file.eof()) { //在内存中建立链式有序表ListA
+		p = new LNode;
+		file >> p->data; 
+		p->next = NULL;
+		r->next = p;   //结点*p入链
+		r = p;        //尾指针指向*p
+
+	}
+	file.close();
+	
+	++st;
+}
+
+void output(LinkList L) //依次输出单链表里的每个元素
+{
+	int i = 0;
+	LNode *p;
+	p = L->next;
+	while (p) {
+		if (i)
+			cout << ","; //i=0时不输出","
+		cout << p->data;
+		p = p->next;
+		i = 1;
+	}
+	cout << endl;
+}
+
+void save_LinkList(LinkList L, string &filename)  //保存合并后的链表文件
+{
+	//filename = filename.substr(0, filename.length()- 5);//删除字符串里保存的文件路径最后5位字符
+    //filename = filename + "C.txt";//默认同一文件路径，修改文件名	
+
+	filename = filename.replace(filename.length() - 5, 5, "C.txt");//此句与上面两句等效
+
+	fstream file;
+	file.open(filename, ios::out); //以输出方式打开文件
+
+	if (!file)
+	{
+		cout << "\n无法打开文件";
+		exit(ERROR);
+	}
+	file << "合并后的单链有序表数据: ";
+
+	LNode *p = L->next;  //P指向第一个元素结点
+
+	while (p)
+	{
+		file << p->data << " ";  //将元素结点的数据域值输出到文件filename
+		p = p->next;
+	}
+
+	file.close();
+
+	cout << "\n合并后的链式有序表保存在" << filename << endl;
+}
+
+void MergeList_L(LinkList &LA, LinkList &LB, LinkList &LC) //算法2.17 链式有序表的合并
+{
+	
+	//要求编写此段
+
+
+} //MergeList_L()
+
+int main() {
+	
+	LinkList La, Lb, Lc; 
+
+	InitList_L(La); //La表的创建
+	input(La, filename); //依次往单链表La里输入数据
+	output(La);
+
+	InitList_L(Lb); //Lb表的创建	
+	input(Lb, filename); //依次往单链表La里输入数据
+	output(Lb);
+
+	InitList_L(Lc);
+	MergeList_L(La, Lb, Lc); //将单链表La和Lb进行合并
+
+	cout << "非递减单链表A，B合并后的非递减单链表C为：\n"; //输出合并后的单链表Lc
+	output(Lc);
+	save_LinkList(Lc, filename);  //保存合并后的链表文件
+
+	system("pause");
+
+	return 0;
+}
