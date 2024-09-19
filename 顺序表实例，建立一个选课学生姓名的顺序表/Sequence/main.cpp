@@ -66,8 +66,7 @@ int main() {
 				ElemType e;
 				cin >> e;
 				if (LocateElem(L, e)) {
-					cout << "\n查到" << e << "序号：" << LocateElem(L, e) + 1;
-					
+					cout << "\n查到" << e << "序号：" << LocateElem(L, e);
 				}
 				else
 					cout << "\n未查到";
@@ -170,7 +169,7 @@ Status GetElem(SqList& L, int i, ElemType& e) {
 Status LocateElem(SqList L, ElemType e) {
 	for (int i = 0; i < L.length; i++) {
 		if (L.e[i] == e)
-			return i;
+			return i+1;
 	}
 	return 0;
 }
