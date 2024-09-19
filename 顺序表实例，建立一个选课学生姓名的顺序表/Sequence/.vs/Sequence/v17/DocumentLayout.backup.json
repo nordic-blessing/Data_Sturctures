@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u987A\u5E8F\u8868\u5B9E\u4F8B\uFF0C\u5EFA\u7ACB\u4E00\u4E2A\u9009\u8BFE\u5B66\u751F\u59D3\u540D\u7684\u987A\u5E8F\u8868\\Sequence\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FC3A3F0-2B0C-4B57-93DF-F611CF97C48A}|Sequence.vcxproj|E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u987A\u5E8F\u8868\u5B9E\u4F8B\uFF0C\u5EFA\u7ACB\u4E00\u4E2A\u9009\u8BFE\u5B66\u751F\u59D3\u540D\u7684\u987A\u5E8F\u8868\\Sequence\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0FC3A3F0-2B0C-4B57-93DF-F611CF97C48A}|Sequence.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 342,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u987A\u5E8F\u8868\u5B9E\u4F8B\uFF0C\u5EFA\u7ACB\u4E00\u4E2A\u9009\u8BFE\u5B66\u751F\u59D3\u540D\u7684\u987A\u5E8F\u8868\\Sequence\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u987A\u5E8F\u8868\u5B9E\u4F8B\uFF0C\u5EFA\u7ACB\u4E00\u4E2A\u9009\u8BFE\u5B66\u751F\u59D3\u540D\u7684\u987A\u5E8F\u8868\\Sequence\\main.cpp*",
+              "RelativeToolTip": "main.cpp*",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAYwHcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-11T15:37:28.329Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
