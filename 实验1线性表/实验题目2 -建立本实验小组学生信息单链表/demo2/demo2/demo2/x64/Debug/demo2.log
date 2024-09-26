@@ -1,6 +1,8 @@
 ﻿  main.cpp
-E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(26,9): warning C4005: “OVERFLOW”: 宏重定义
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(8,9): warning C4005: “OVERFLOW”: 宏重定义
       D:\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(975,13):
       参见“OVERFLOW”的前一个定义
   
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(268,7): warning C4101: “temp”: 未引用的局部变量
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(87,1): warning C4715: “CreateList_H”: 不是所有的控件路径都返回值
   demo2.vcxproj -> E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\x64\Debug\demo2.exe

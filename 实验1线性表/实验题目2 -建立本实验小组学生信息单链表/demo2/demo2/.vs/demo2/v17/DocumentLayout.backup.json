@@ -13,9 +13,17 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 266,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 284,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,23 +32,15 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u5B9E\u9A8C1\u7EBF\u6027\u8868\\\u5B9E\u9A8C\u9898\u76EE2 -\u5EFA\u7ACB\u672C\u5B9E\u9A8C\u5C0F\u7EC4\u5B66\u751F\u4FE1\u606F\u5355\u94FE\u8868\\demo2\\demo2\\main.cpp*",
               "RelativeToolTip": "main.cpp*",
-              "ViewState": "AgIAADcAAAAAAAAAAAA8wDgBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAUwNIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-19T00:30:34.624Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         },
         {
-          "DockedHeight": 122,
+          "DockedHeight": 104,
           "SelectedChildIndex": -1,
           "Children": [
             {

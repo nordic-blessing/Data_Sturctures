@@ -1,131 +1,338 @@
-//实验题目2（单链表） 
-//建立本实验小组学生信息单链表；
-
-
-/*要求：
-0.下面的代码供参考，可以在此程序框架下编写，也可以全部自行编写完成本实验题目
-1.元素的数据项是3项：学号，学生姓名，专业
-2.目前的程序已具备的基本操作：创建（尾插法）、取值；
-3.请编写：创建（头插法）、查找、插入、删除 这4个基本操作函数，并修改main( )函数，在main( )函数调用这4个基本函数;
-4.将实验过程按要求写入实验报告;
-5.思考：如果改为双链表，程序应如何修改？
-*/
-
-//2022.09.17d
 #include<iostream>
-#include<string>        //用于定义字符串类型变量
-#include<iomanip>       //用于控制输出格式
+#include<string>
+#include<iomanip>
 using namespace std;
 
-/*******以下是宏定义***************************/
+#define OK 1
+#define ERROR 0
+#define OVERFLOW -1
 
-#define OK 1         //函数结果状态码,表示函数功能执行成功
-#define ERROR 0      //函数结果状态码,表示函数功能执行失败
-					 //如果用bool型变量(取值:ture,false)，可以不用宏定义OK和ERROR,这里我们与教材保持一致，不采用
+#define Status int
+#define ElemType Student
 
-#define OVERFLOW -1  //函数结果状态码,表示函数执行时溢出
-					//（注意VS对OVERFLOW已经做了宏定义,这里是重定义，加这条是为了与教材保持一致）
-
-
-#define Status int   //Status是函数返回值类型，其值是函数结果状态代码(可根据实际需要选择Status代表的数据类型，此例为int型)
-
-/****************Status也可以如下方式定义***************************************/
-//typedef int Status; //Status是函数返回值类型，其值是函数结果状态代码(可根据实际需要选择Status代表的数据类型，此例为int型)
-
-/********定义（设计）数据存储结构类型********************/
-typedef struct
-{
-	int Snumber;  //学号
-	string name;  //姓名
-	string major; //专业
+typedef struct {
+	int Snumber;	//学号
+	string name;	//姓名
+	string major;	//专业
 }Student;
 
+typedef struct LNode {
+	Student data;
+	struct LNode* next;
+}LNode, * LinkList;
 
-typedef struct LNode //用typedef（类型定义）描述结点的数据存储结构(是一个结构体，名字自定，这里将它取名为LNode,即链表结点)
-{
-	Student student_data;  //student_data为数据域，是Student型结构体，保存结点中的数据信息（学号、姓名、专业）
-	struct LNode* next;   //链表结点指针域，保存该结点的直接后继结点的地址
+/**
+* CreateLList_H		前插法创建单链表
+* @param L			单链表L
+* @param n			链表最大长度
+* @return			Status
+*/
+Status CreateList_H(LinkList& L, int n) {
+	L = new LNode;
+	if (!L)
+		return ERROR;
+	L->next = NULL;
+	for (int i = 0; i < n; i++) {
+		LNode* p;
 
-}LNode, * LinkList;   //以后可以用LinkList作为此自定义类型的类型名,用来定义变量，如将x定义为LinkList类型：LinkList x; x就成为此结构体类型的变量
+		cout << "前插法创建单链表 \n\n";
+		cout << "请输入 学号 姓名 专业 （空格间隔，回车输入，0退出）：\n\n";
 
+		while (n) {
+			p = new LNode;
+			if (!p)
+				return ERROR;
 
+			cin >> p->data.Snumber;
+			if (!cin) {
+				cout << "学号输入错误，请重新输入\n";
+				cin.clear();
+				cin.ignore(500, '\n');
+				continue;
+			}
+			if (p->data.Snumber == 0)
+				break;
 
-/*****以下是主函数（利用下面抽象数据类型定义的各种操作函数，实现数据管理）*************************************/
-/*****如果还想具有某些管理功能，但发现实现不了，就在抽象数据类型中增加定义新的基本操作，并以函数实现，放在后面*/
-/*****也就是说，基本操作有哪些，并不是固定的，根据用户实际需求设计*********************************************/
+			cin >> p->data.name;
+			if (!cin) {
+				cout << "姓名输入错误，请重新输入\n";
+				cin.clear();
+				cin.ignore(500, '\n');
+				continue;
+			}
+			if (p->data.name == "0")
+				break;
+
+			cin >> p->data.major;
+			if (!cin) {
+				cout << "专业输入错误，请重新出入\n";
+				cin.clear();
+				cin.ignore(500, '\n');
+				continue;
+			}
+			if (p->data.major == "0")
+				break;
+
+			p->next = L->next;
+			L->next = p;
+
+			n--;
+		}
+		if (!n)
+			cout << "\n建表完成！\n";
+		else
+			cout << "\n退出，未完成建表！\n";
+		return OK;
+	}
+}
+
+/**
+* CreateList_R		后插法创建单链表
+* @param L			单链表L
+* @param n			链表的最大长度
+* @return			Status
+*/
+Status CreateList_R(LinkList& L, int n) {
+	L = new LNode;
+	if (!L)
+		return ERROR;
+	L->next = NULL;
+
+	LNode* p, * r;
+	r = L;
+
+	cout << "后插法创建单链表 \n\n";
+	cout << "请输入 学号 姓名 专业 （空格间隔，回车输入，0退出）：\n\n";
+
+	while (n) {
+		p = new LNode;
+		if (!p)
+			return ERROR;
+
+		cin >> p->data.Snumber;
+		if (!cin) {
+			cout << "学号输入错误，请重新输入\n";
+			cin.clear();
+			cin.ignore(500, '\n');
+			continue;
+		}
+		if (p->data.Snumber == 0)
+			break;
+
+		cin >> p->data.name;
+		if (!cin) {
+			cout << "姓名输入错误，请重新输入\n";
+			cin.clear();
+			cin.ignore(500, '\n');
+			continue;
+		}
+		if (p->data.name == "0")
+			break;
+
+		cin >> p->data.major;
+		if (!cin) {
+			cout << "学号输入错误，请重新出入\n";
+			cin.clear();
+			cin.ignore(500, '\n');
+			continue;
+		}
+		if (p->data.major == "0")
+			break;
+
+		p->next = NULL;
+		r->next = p;
+		r = p;
+
+		n--;
+	}
+	if (!n)
+		cout << "建表完成！\n";
+	else
+		cout << "\n退出，未完成建表！\n";
+	return OK;
+}
+
+/**
+* GetElem		单链表的取值
+* @param L		单链表L
+* @param i		位置序号
+* @param e		储存目标结点信息
+* @return		Status
+*/
+Status GetElem(LinkList L, int i, ElemType& e) {
+	LNode* p;
+	p = L->next;
+	int j = 1;
+
+	while (p && j < i) {
+		p = p->next;
+		j++;
+	}
+	if (!p || j > i)
+		return ERROR;
+
+	e = p->data;
+
+	return OK;
+}
+
+/**
+* LocateElem		单链表按值查找
+* @param L			单链表L
+* @param e			给定值
+* #return LNode*	储存目标信息的结点指针
+*/
+LNode* LocateElem(LinkList L, string e) {
+	LNode* p;
+	p = L->next;
+
+	while (p && p->data.name != e)
+		p = p->next;
+
+	return p;
+}
+
+/**
+* ListInsert	单链表的插入
+* @param L		单链表L
+* @param i		插入位置
+* @param e		插入结点信息
+* @return Status
+*/
+Status ListInsert(LinkList& L, int i, ElemType e) {
+	LNode* p, * s;
+	int j = 0;
+	p = L;
+
+	while (p && (j < i - 1)) {
+		p = p->next;
+		j++;
+	}
+	if (!p || j > i - 1) {
+		cout << "error\n";
+		return ERROR;
+	}
+
+	s = new LNode;
+	s->data = e;
+	s->next = p->next;
+	p->next = s;
+
+	return OK;
+}
+
+/**
+* ListDelete	单链表结点的删除
+* @param L		单链表L
+* @param i		被删除结点的序号
+* @return Status
+*/
+Status ListDelete(LinkList& L, int i) {
+	LNode* p, * q;
+	int j = 0;
+	p = L;
+
+	while ((p->next) && (j < i - 1)) {
+		p = p->next;
+		j++;
+	}
+	if (!(p->next) || (j > i - 1))
+		return ERROR;
+
+	q = p->next;
+	p->next = q->next;
+	delete q;
+
+	return OK;
+}
+
+/**
+* Choose_num		//提示并选择输入操作编号
+* @param choose		操作编号
+* @return void
+*/
+void Choose_num(int& choose){
+	cout << "\n《数据结构与算法》选课名单的相应操作:\n";
+	cout << " 1.创建（头插法） 2.创建（尾插法）  3.取值 \n"
+		<< " 4.查找    5.插入   6.删除  7.输出  0.退出\n";
+	cout << "\n请输入选择的操作编号: ";
+
+	cin >> choose;
+}
 
 int main() {
+	LinkList L, p;
+	L = NULL;
 
-	Status CreateList_R(LinkList & L, int n);            //函数声明，基本操作6(2):创建（尾插法把学生名单输入单链表L），即后插法
-	Status GetElem(LinkList L, int i, Student & e);       //函数声明，基本操作2：取值（ 根据给定的序号，获取该序号的学生信息）
+	int i, n;
+	char temp;
 
-	//======================================================================================
-	void Choose_num(int& choose); //函数声明，提示并选择输入操作编号
+	Student student_data;
+	string name;
 
-	LinkList L, p;            //定义一个单链表L（L即头指针），结点指针p(也可以这样定义：LNode* p，等价)
-	L = NULL; //头指针L指向空，目前还没有指向头结点
+	int flag_create = 0;
+	
+	int choose = -1;
 
+	while (choose != 0) {
+		Choose_num(choose);
 
-	int i, n;     //计数器
-	char temp;  //临时辅助字符变量,用于清除输入错误
-
-	Student student_data;  //定义Student类型的结构体变量student_data
-	string name;         //定义姓名字符串变量(用于查找操作，输入需要查找的学生姓名)
-
-	int flag_create = 0; //单链表创建标志, 0:未创建，1:已创建
-
-	int choose;          //定义基本操作选择编号
-	choose = -1;         //初始化选择的编号为-1（实际无此编号）
-
-
-	while (choose != 0)
-	{
-
-		Choose_num(choose);  //提示并选择输入操作编号
-
-		if (!cin)            //判断输入是否为数字
-		{
+		if (!cin) {
 			cout << "\n输入操作选择编号非数字!请重新输入\n";
-			cin.clear();  //清除缓冲区错误标志		  
-			while ((temp = getchar()) != '\n');  //将输入到缓冲区的数字一个一个抹去，直到换行符为止,也可用cin.ignore(a,'\n')
+			cin.clear();
+			cin.ignore(500, '\n');
 			choose = -1;
 			continue;
 		}
-
-
-		switch (choose)
-		{
-		case 0: break;  //退出
-
-		case 1: //创建（头插法）
-
-			cout << "\n此操作尚未编写\n";
-
+		switch (choose){
+		case 0:
 			break;
-
-		case 2: //创建（尾插法）
-			if (flag_create)
-			{
+		case 1:		//前插法创建单链表
+			if (flag_create){
 				cout << "\n已创建，是否重新创建？若是，请输入Y >";
 				char answer;
 				cin >> answer;
 				if (answer == 'y' || answer == 'Y');
-				else break;
+				else
+					break;
 			}
 			cout << "\n输入创建入表的学生数量n=";
 			cin >> n;
-			if (!n) { cout << "\n输入学生数量不能为0\n"; break; }
-			if (CreateList_R(L, n))  //把学生名单输入此单链表L（尾插法创建单链表）
-			{
-				if (L->next) flag_create = 1;
-			}//创建成功标志			
+			if (!n) {
+				cout << "\n输入学生数量不能为0\n";
+				break;
+			}
+			if (CreateList_H(L, n))
+				if (L->next)
+					flag_create = 1;
 			break;
-
-		case 3:  //取值
-			if (!flag_create) { cout << "\n尚未建表\n"; break; }
-			cout << "请输入取值序号i："; cin >> i;
-			if (GetElem(L, i, student_data))//取值（ 根据给定的序号，获取该序号的学生信息）
-			{
+		case 2:		//后插法创建单链表
+			if (flag_create) {
+				cout << "\n已创建，是否重新创建？若是，请输入Y >";
+				char answer;
+				cin >> answer;
+				if (answer == 'y' || answer == 'Y');
+				else
+					break;
+			}
+			cout << "\n输入创建入表的学生数量n=";
+			cin >> n;
+			if (!n) {
+				cout << "\n输入学生数量不能为0\n";
+				break;
+			}
+			if (CreateList_R(L, n))
+				if (L->next)
+					flag_create = 1;
+			break;
+		case 3:
+			if (!flag_create){
+				cout << "\n尚未建表\n";
+				break;
+			}
+			cout << "请输入取值序号i：";
+			cin >> i;
+			if (GetElem(L, i, student_data)){
 				cout << "\n查到第" << i << "名学生的信息：\n";
 				cout << left << setw(15) << "学 号" << "\t"
 					<< left << setw(15) << "姓 名" << "\t"
@@ -133,28 +340,88 @@ int main() {
 				cout << left << setw(15) << student_data.Snumber << "\t"
 					<< left << setw(15) << student_data.name << "\t"
 					<< left << setw(15) << student_data.major << endl;
-
 			}
-			else cout << "\n输入序号不存在!\n";
+			else
+				cout << "\n输入序号不存在!\n";
 			break;
-
-		case 4:   //查找
-
-			cout << "\n此操作尚未编写\n";
+		case 4:
+			if (!flag_create) {
+				cout << "\n尚未建表\n";
+				break;
+			}
+			cout << "请输入姓名：";
+			cin >> name;
+			p = LocateElem(L, name);
+			if (p) {
+				cout << "\n查到 " << name << "信息：" << endl;
+				cout << left << setw(15) << "学 号" << "\t"
+					<< left << setw(15) << "姓 名" << "\t"
+					<< left << setw(15) << "专 业" << endl;
+				cout << left << setw(15) << p->data.Snumber << "\t"
+					<< left << setw(15) << p->data.name << "\t"
+					<< left << setw(15) << p->data.major << "\t";
+			}
+			else
+				cout << "未查到\n\n";
 			break;
+		case 5:
+			if (!flag_create) {
+				cout << "\n尚未建表\n";
+				break;
+			}
+			cout << "\n请输入插入位置：";
+			cin >> i;
+			cout << "\n请输入 学号 姓名 专业（空格间隔，回车输入，0放弃）:\n\n";
+			do {
+				n = 1;
 
-		case 5:   //插入
+				cin >> student_data.Snumber;
+				if (!cin) {
+					cout << "学号输入错误，请重新输入\n";
+					cin.clear();
+					cin.ignore(500, '\n');
+					continue;
+				}
+				if (student_data.Snumber == 0)
+					break;
 
-			cout << "\n此操作尚未编写\n";
+				cin >> student_data.name;
+				if (!cin) {
+					cout << "姓名输入错误，请重新输入\n";
+					cin.clear();
+					cin.ignore(500, '\n');
+					continue;
+				}
+				if (student_data.name == "0")
+					break;
+
+				cin >> student_data.major;
+				if (!cin) {
+					cout << "专业输入错误，请重新出入\n";
+					cin.clear();
+					cin.ignore(500, '\n');
+					continue;
+				}
+				if (student_data.major == "0")
+					break;
+
+				n = 0;
+			} while (n);
+
+			if(ListInsert(L, i, student_data))
+				cout<<"\n插入成功\n";
 			break;
-
-
-		case 6:   //删除
-			cout << "\n此操作尚未编写\n";
+		case 6:
+			if (!flag_create) {
+				cout << "\n尚未建表\n";
+				break;
+			}
+			cout << "\n请输入要删除姓名的序号：\n";
+			cin >> i;
+			if (ListDelete(L, i))
+				cout << "删除成功！\n";
 			break;
-
-
-		case 7:   //输出
+		case 7:
 			if (!flag_create) { cout << "\n尚未建表\n"; break; }
 
 			cout << "\n" << left << setw(15) << "学 号" << "\t"
@@ -163,150 +430,15 @@ int main() {
 
 			for (p = L->next, n = 0; p != NULL; p = p->next)  //依次输出单链表各个结点的数据域信息
 			{
-				cout << left << setw(15) << p->student_data.Snumber << "\t"        //输出学号
-					<< left << setw(15) << p->student_data.name << "\t"   //输出姓名
-					<< left << setw(15) << p->student_data.major << endl; //输出专业
+				cout << left << setw(15) << p->data.Snumber << "\t"        //输出学号
+					<< left << setw(15) << p->data.name << "\t"   //输出姓名
+					<< left << setw(15) << p->data.major << endl; //输出专业
 				n++;
 			}
 			cout << "\n选课学生名单输出完毕(共" << n << "名)\n";
 			break;
-			/***************/
-
-		default:  cout << "\n输入编号错误!\n "; break;
-
-		}//switch
-
-	}//while
-
-	return 0;
-}//main
-/***********************/
-/***********************/
-void Choose_num(int& choose)  //提示并选择输入操作编号
-{
-	cout << "\n《数据结构与算法》选课名单的相应操作:\n";
-	cout << " 1.创建（头插法） 2.创建（尾插法）  3.取值 \n"
-		<< " 4.查找    5.插入   6.删除  7.输出  0.退出\n";
-	cout << "\n请输入选择的操作编号: ";
-
-	cin >> choose;   //输入选择的基本操作编号	
-}
-
-
-/************以下是供主函数调用的基本操作函数(实现线性表抽象数据类型定义的各种基本操作)***********************/
-/***********************************************************************************************************/
-//基本操作6（1）：创建（头插法）（把学生名单输入单链表）
-
-
-
-
-
-/**************下面为此单链表尚未实现的基本操作****************************************************/
-//基本操作6（2）：创建（尾插法）（把学生名单输入单链表）
-Status CreateList_R(LinkList& L, int n)  //尾插法把学生名单输入单链表L
-{//正位序输入n个元素的值，建立带头结点的单链表L
- //创建是包含了对单链表进行初始化操作 
-
-	L = new LNode; //生产一个新结点作为头结点，L指针为头指针（即new为单链表分配一个LNode结构体型空间）
-	if (!L) return ERROR;     //分配失败（比如内存空间不足），返回结果状态码ERROR,即Status=ERROR(即Status=0)
-	L->next = NULL;           //分配成功，头结点指针域初始化为空（还没有指向第一个数据结点）
-
-	LNode* r, * p;          //定义尾指针r,新结点指针p
-	r = L;                 //尾指针r指向头结点（目前为空表，头结点即最后一个结点）
-
-	cout << "尾插法创建单链表\n";
-	cout << "请输入 学号  姓名  专业 (空格间隔，回车输入, 0退出):\n\n";
-
-	while (n)
-	{
-
-		p = new LNode;         //生成新的LNode型元素节点*p
-		if (!p) return ERROR;  //分配节点失败（比如内存空间不足），返回结果状态码ERROR
-
-
-
-		//输入新节点*p的数据域的数据项:学号、姓名、专业
-		cin >> p->student_data.Snumber;  //输入学号
-		if (!cin)
-		{
-			cout << "\n学号输入错误，请重新输入\n";
-			cin.clear();  //清除缓冲区错误标志		  
-			cin.ignore(500, '\n');  //将输入到缓冲区的数字一个一个抹去，直到换行符为止		  
-			continue;
+		default:
+			break;
 		}
-		if (p->student_data.Snumber == 0) break; //=0 means 退出	
-
-		cin >> p->student_data.name; //输入姓名
-		if (!cin)
-		{
-			cout << "\n姓名输入错误，请重新输入\n";
-			cin.clear();  //清除缓冲区错误标志		  
-			cin.ignore(500, '\n');  //将输入到缓冲区的数字一个一个抹去，直到换行符为止		  
-			continue;
-		}
-		if (p->student_data.name == "0") break; //="0" means 退出
-
-		cin >> p->student_data.major;
-		if (!cin)
-		{
-			cout << "\n专业输入错误，请重新输入\n";
-			cin.clear();  //清除缓冲区错误标志		  
-			cin.ignore(500, '\n');  //将输入到缓冲区的数字一个一个抹去，直到换行符为止		  
-			continue;
-		}
-		if (p->student_data.major == "0") break; //="0" means 退出		   
-
-		r->next = p;   //新结点*P链接到原尾部结点之后
-		p->next = NULL; //*P结点为最后结点
-		r = p;        //尾指针指向*p结点（即*P结点标记为新的尾部结点）
-
-		n--;  //未录入数量减1
-
-
-
-	}//while
-	if (!n)
-		cout << "\n建表完成!\n";
-	else
-		cout << "\n退出，未完成建表!\n";
-	return OK;
-}
-
-/*********************************************************************************************/
-
-//基本操作2：取值（ 根据给定的序号，获取该序号的学生信息）
-Status GetElem(LinkList L, int i, Student& e)
-{
-	LNode* p;    //定义指向结点的指针p
-	p = L->next;   //指针指向第一个元素结点，从这个结点开始向后搜索
-	int j = 1;     //结点计数器，初始化为1
-
-	while (p && j < i)  //顺链搜索，直到P指向空或j=i
-	{
-		p = p->next;   //继续向后搜索
-		j++;       //标记pa指向了第几个数据结点
 	}
-
-	if (!p || j > i) return ERROR; //i值不合法，i>n或i<=0
-
-	e = p->student_data;  //j=i,搜索成功，返回该生信息
-
-	return OK;
 }
-
-/************************************************************************************************/
-//基本操作3：查找（ 根据给定学生姓名，查找该名学生是否在表中，并返回查找结果）
-//这段同学们在实验中写，并相应修改主函数,在某种情况下调用此函数
-
-
-/************************************************************************************************/
-//基本操作4：插入（将新增学生信息插入表中指定位置）
-//这段同学们在实验中写，并相应修改主函数,在某种情况下调用此函数
-
-
-/************************************************************************************************/
-//基本操作5：删除（ 有学生退选，在选课学生表中将该生信息删除）
-//这段同学们在实验中写，并相应修改主函数,在某种情况下调用此函数
-
-
-/*****************************/
