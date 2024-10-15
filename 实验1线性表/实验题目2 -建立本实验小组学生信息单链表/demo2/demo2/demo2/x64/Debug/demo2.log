@@ -1,8 +1,359 @@
 ﻿  main.cpp
-E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(8,9): warning C4005: “OVERFLOW”: 宏重定义
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(7,9): warning C4005: “OVERFLOW”: 宏重定义
       D:\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(975,13):
       参见“OVERFLOW”的前一个定义
   
-E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(268,7): warning C4101: “temp”: 未引用的局部变量
-E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(87,1): warning C4715: “CreateList_H”: 不是所有的控件路径都返回值
-  demo2.vcxproj -> E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\x64\Debug\demo2.exe
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(336,21): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(336,10): error C2593: “operator <<”不明确
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(486,39):
+      可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(454,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(436,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(418,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(400,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(382,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(364,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(346,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(328,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(309,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(283,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(264,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(230,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(212,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(206,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(200,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(195,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(1088,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(953,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(947,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(942,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(936,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(819,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(774,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(738,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(694,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(336,10):
+      尝试匹配参数列表“(std::basic_ostream<char,std::char_traits<char>>, unknown-type)”时
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(337,17): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(338,17): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(339,21): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(339,10): error C2593: “operator <<”不明确
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(486,39):
+      可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(454,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(436,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(418,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(400,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(382,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(364,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(346,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(328,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(309,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(283,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(264,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(230,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(212,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(206,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(200,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(195,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(1088,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(953,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(947,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(942,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(936,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(819,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(774,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(738,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(694,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(339,10):
+      尝试匹配参数列表“(std::basic_ostream<char,std::char_traits<char>>, unknown-type)”时
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(340,17): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(341,17): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(356,21): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(356,10): error C2593: “operator <<”不明确
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(486,39):
+      可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(454,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(436,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(418,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(400,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(382,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(364,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(346,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(328,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(309,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(283,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(264,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(230,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(212,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(206,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(200,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(195,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(1088,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(953,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(947,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(942,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(936,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(819,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(774,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(738,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(694,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(356,10):
+      尝试匹配参数列表“(std::basic_ostream<char,std::char_traits<char>>, unknown-type)”时
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(357,17): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(358,17): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(359,21): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(359,10): error C2593: “operator <<”不明确
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(486,39):
+      可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(454,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(436,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(418,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(400,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(382,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(364,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(346,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(328,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(309,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(283,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(264,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(230,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(212,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(206,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(200,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(195,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(1088,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(953,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(947,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(942,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(936,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(819,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(774,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(738,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(694,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(359,10):
+      尝试匹配参数列表“(std::basic_ostream<char,std::char_traits<char>>, unknown-type)”时
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(360,17): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(361,17): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(426,28): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(426,17): error C2593: “operator <<”不明确
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(486,39):
+      可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(454,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(436,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(418,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(400,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(382,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(364,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(346,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(328,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(309,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(283,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(264,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(230,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(212,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(206,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(200,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(195,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(1088,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(953,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(947,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(942,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(936,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(819,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(774,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(738,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(694,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(426,17):
+      尝试匹配参数列表“(std::basic_ostream<char,std::char_traits<char>>, unknown-type)”时
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(427,16): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(428,16): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(432,21): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(432,10): error C2593: “operator <<”不明确
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(486,39):
+      可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(454,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(436,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(418,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(400,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(382,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(364,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(346,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(328,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(309,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(283,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(264,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(230,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(212,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(206,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(200,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(195,39):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(1088,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(953,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(947,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(942,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(936,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(819,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(774,31):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(738,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)”
+      D:\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\ostream(694,32):
+      或    “std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)”
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(432,10):
+      尝试匹配参数列表“(std::basic_ostream<char,std::char_traits<char>>, unknown-type)”时
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(433,17): error C3861: “setw”: 找不到标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验1线性表\实验题目2 -建立本实验小组学生信息单链表\demo2\demo2\main.cpp(434,17): error C3861: “setw”: 找不到标识符

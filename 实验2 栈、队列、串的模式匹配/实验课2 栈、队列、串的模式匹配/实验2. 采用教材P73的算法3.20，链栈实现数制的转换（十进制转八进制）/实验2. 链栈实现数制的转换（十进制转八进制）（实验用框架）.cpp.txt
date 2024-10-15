@@ -1,0 +1,59 @@
+/*
+自动化专业《数据结构与算法》
+实验1.2 链栈实现数制的转换
+采用教材P73的算法3.20
+此程序只提供了框架，具体实现细节需要参加实验的同学自己填写相应代码
+*/
+
+#include<iostream>
+using namespace std;
+
+#define OK 1
+#define ERROR 0
+#define OVERFLOW -2
+
+typedef int Status;
+
+//----链栈存储结构----
+typedef struct StackNode {
+	
+
+} StackNode, *LinkStack;
+
+Status InitStack(LinkStack &S) {//初始化链栈
+	
+
+}
+bool StackEmpty(LinkStack S) {//检查链栈是否为空
+
+
+}
+Status Push(LinkStack &S, int e) {//压入链栈
+	
+
+}
+Status Pop(LinkStack &S, int &e) {//弹出链栈
+	
+
+}
+
+//算法3.20　数制的转换(链栈实现)
+void conversion(int N) 
+{//对于任意一个非负十进制数，输出与其等值的八进制数
+
+	int e;
+	LinkStack S;
+
+
+}
+
+
+int main() {//对于输入的任意一个非负十进制数，打印输出与其等值的八进制数
+	
+	int n;
+	cout << "\n输入一个非负十进制数:";
+	cin >> n;
+	conversion(n);
+
+	return 0;
+}

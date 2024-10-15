@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u5B9E\u9A8C1 \u7EBF\u6027\u8868\\\u5B9E\u9A8C\u9898\u76EE1 -\u5EFA\u7ACB\u672C\u5B9E\u9A8C\u5C0F\u7EC4\u5B66\u751F\u4FE1\u606F\u987A\u5E8F\u8868\\demo1\\",
+  "WorkspaceRootPath": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u5B9E\u9A8C1\u7EBF\u6027\u8868\\\u5B9E\u9A8C\u9898\u76EE1 -\u5EFA\u7ACB\u672C\u5B9E\u9A8C\u5C0F\u7EC4\u5B66\u751F\u4FE1\u606F\u987A\u5E8F\u8868\\demo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C6807D7-2E5D-4AC4-9084-2F31E9DAEAF0}|demo1.vcxproj|E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u5B9E\u9A8C1 \u7EBF\u6027\u8868\\\u5B9E\u9A8C\u9898\u76EE1 -\u5EFA\u7ACB\u672C\u5B9E\u9A8C\u5C0F\u7EC4\u5B66\u751F\u4FE1\u606F\u987A\u5E8F\u8868\\demo1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7C6807D7-2E5D-4AC4-9084-2F31E9DAEAF0}|demo1.vcxproj|E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u5B9E\u9A8C1\u7EBF\u6027\u8868\\\u5B9E\u9A8C\u9898\u76EE1 -\u5EFA\u7ACB\u672C\u5B9E\u9A8C\u5C0F\u7EC4\u5B66\u751F\u4FE1\u606F\u987A\u5E8F\u8868\\demo1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7C6807D7-2E5D-4AC4-9084-2F31E9DAEAF0}|demo1.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -13,29 +13,39 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 342,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u5B9E\u9A8C1 \u7EBF\u6027\u8868\\\u5B9E\u9A8C\u9898\u76EE1 -\u5EFA\u7ACB\u672C\u5B9E\u9A8C\u5C0F\u7EC4\u5B66\u751F\u4FE1\u606F\u987A\u5E8F\u8868\\demo1\\main.cpp",
+              "DocumentMoniker": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u5B9E\u9A8C1\u7EBF\u6027\u8868\\\u5B9E\u9A8C\u9898\u76EE1 -\u5EFA\u7ACB\u672C\u5B9E\u9A8C\u5C0F\u7EC4\u5B66\u751F\u4FE1\u606F\u987A\u5E8F\u8868\\demo1\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u5B9E\u9A8C1 \u7EBF\u6027\u8868\\\u5B9E\u9A8C\u9898\u76EE1 -\u5EFA\u7ACB\u672C\u5B9E\u9A8C\u5C0F\u7EC4\u5B66\u751F\u4FE1\u606F\u987A\u5E8F\u8868\\demo1\\main.cpp*",
+              "ToolTip": "E:\\myscu\\\u5927\u4E8C\u4E0A\\\u6570\u636E\u7ED3\u6784\u4E0E\u7B97\u6CD5\\Data_Sturctures\\\u5B9E\u9A8C1\u7EBF\u6027\u8868\\\u5B9E\u9A8C\u9898\u76EE1 -\u5EFA\u7ACB\u672C\u5B9E\u9A8C\u5C0F\u7EC4\u5B66\u751F\u4FE1\u606F\u987A\u5E8F\u8868\\demo1\\main.cpp*",
               "RelativeToolTip": "main.cpp*",
-              "ViewState": "AgIAAK0AAAAAAAAAAAA0wLIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-18T15:35:55.158Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1428,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

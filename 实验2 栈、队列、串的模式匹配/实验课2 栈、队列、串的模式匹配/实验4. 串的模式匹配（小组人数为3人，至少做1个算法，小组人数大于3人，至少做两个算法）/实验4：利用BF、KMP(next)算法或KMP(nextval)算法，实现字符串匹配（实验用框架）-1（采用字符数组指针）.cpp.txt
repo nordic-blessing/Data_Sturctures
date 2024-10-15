@@ -1,0 +1,58 @@
+/*自动化专业《数据结构与算法》实验
+实验4：利用BF、KMP(next)算法或KMP(nextval)算法中的一种，实现字符串匹配
+
+注意：此程序只提供了部分代码供参考，如何实现字符串匹配，需要参加实验的同学自己编写相应代码
+*/
+
+#include<cstring>
+#include<iostream>
+#include<windows.h>
+using namespace std;
+
+#define OK 1
+#define ERROR 0
+#define OVERFLOW -2
+typedef int Status;
+#define MAXLEN 10000   		//串的最大长度 
+
+//---串的定长顺序存储结构----
+typedef struct
+{
+	char ch[MAXLEN + 1];  //存储串的一维数组,0号分量闲置不用，也可以用于存放串的长度（<=255）
+	int length;           //length
+}SString;
+
+
+Status StrAssign(SString &T, char *chars) { //生成一个其值等于chars的串T
+	int i;
+	if (strlen(chars) > MAXLEN)	//串长超过限值
+		return ERROR;
+	else
+	{
+		T.length = strlen(chars);
+		for (i = 1; i <= T.length; i++)
+		{
+			T.ch[i] = *(chars + i - 1);     
+			             //这么做的目的：从文件或按键输入的串，存放是从数组下标0开始的，改为从数组下标1开始存放
+					     //其实从文件或按键输入串时，可以直接从数组下标1开始存放，并计算长度，这个基本操作就可以不要
+		}                //这里是为了与教材P86的抽象数据类型涉及的操作保持一致（StrAssign(&T,chars），采用了这个基本操作
+		return OK;
+	}
+}
+
+
+int main()
+{
+	
+	SString S;  //定义主串S
+	S.length = 0;//串长初始化为0
+
+	char str1[MAXLEN];  //定义一维字符数组，用于存放读入的字符
+	
+	cout << "\n\n请输入主串字符: ";
+	gets_s(str1);
+	
+	
+
+	return 0;
+}

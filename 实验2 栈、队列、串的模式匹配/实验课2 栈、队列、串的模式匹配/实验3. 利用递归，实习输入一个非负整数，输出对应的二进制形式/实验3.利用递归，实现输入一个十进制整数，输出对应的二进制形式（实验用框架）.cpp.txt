@@ -1,0 +1,24 @@
+/*自动化专业《数据结构与算法》
+  实验3.利用递归，实现输入一个非负十进制整数，输出对应的二进制形式
+  下面的只提供头文件与程序大框架，需参加实验的同学思考并实现:
+  如何利用函数conversion递归实现十进制整数转换为二进制，并输出。
+*/
+
+#include<iostream>
+using namespace std;
+
+
+void conversion(int n)  //输出n的二进制形式
+{
+	
+}
+
+
+
+int main()
+{
+
+	
+
+	return 0;
+}

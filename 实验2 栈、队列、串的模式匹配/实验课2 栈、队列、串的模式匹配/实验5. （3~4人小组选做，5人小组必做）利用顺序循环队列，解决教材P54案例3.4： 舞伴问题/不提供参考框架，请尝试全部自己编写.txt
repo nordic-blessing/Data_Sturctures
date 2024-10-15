@@ -1,0 +1,20 @@
+
+
+//- - - 跳舞者个人信息存储结构 - - - 
+typedef struct
+{
+	char name[20]; //姓名
+	char sex; //性别，'F'表示女性，'M'表示男性
+} Person;
+
+Person dancer[MAXQSIZE];
+
+//- - - - - 队列的顺序存储结构- - - - - 
+typedef struct
+{
+	Person *base; //队列中数据元素类型为Person
+	int front; //头指针
+	int rear; //尾指针
+} SqQueue;
+
+SqQueue Mdancers, Fdancers; //两个队列,分别存放男士和女士入队者

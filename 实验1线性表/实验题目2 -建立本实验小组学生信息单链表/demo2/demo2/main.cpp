@@ -325,7 +325,7 @@ int main() {
 				if (L->next)
 					flag_create = 1;
 			break;
-		case 3:
+		case 3:		//单链表的取值（输入序号 获取信息）
 			if (!flag_create){
 				cout << "\n尚未建表\n";
 				break;
@@ -343,7 +343,7 @@ int main() {
 			}
 			else
 				cout << "\n输入序号不存在!\n";
-			break;
+			break;		//单链表的查找（输入姓名 查找信息）
 		case 4:
 			if (!flag_create) {
 				cout << "\n尚未建表\n";
@@ -364,7 +364,7 @@ int main() {
 			else
 				cout << "未查到\n\n";
 			break;
-		case 5:
+		case 5:		//单链表的插入
 			if (!flag_create) {
 				cout << "\n尚未建表\n";
 				break;
@@ -411,7 +411,7 @@ int main() {
 			if(ListInsert(L, i, student_data))
 				cout<<"\n插入成功\n";
 			break;
-		case 6:
+		case 6:		//单链表的删除
 			if (!flag_create) {
 				cout << "\n尚未建表\n";
 				break;
@@ -421,7 +421,7 @@ int main() {
 			if (ListDelete(L, i))
 				cout << "删除成功！\n";
 			break;
-		case 7:
+		case 7:		//读取链表信息
 			if (!flag_create) { cout << "\n尚未建表\n"; break; }
 
 			cout << "\n" << left << setw(15) << "学 号" << "\t"
