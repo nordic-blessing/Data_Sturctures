@@ -1,0 +1,8 @@
+﻿  Stack.cpp
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课2 栈、队列、串的模式匹配\实验1. 建立一个顺序栈，并按要求进行测试\demo1\main.h(12,9): warning C4005: “OVERFLOW”: 宏重定义
+  (编译源文件“Stack.cpp”)
+      D:\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(975,13):
+      参见“OVERFLOW”的前一个定义
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课2 栈、队列、串的模式匹配\实验1. 建立一个顺序栈，并按要求进行测试\demo1\Stack.cpp(51,1): warning C4715: “GetTop”: 不是所有的控件路径都返回值
+  demo1.vcxproj -> E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课2 栈、队列、串的模式匹配\实验1. 建立一个顺序栈，并按要求进行测试\demo1\x64\Debug\demo1.exe
