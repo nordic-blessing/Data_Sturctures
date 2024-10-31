@@ -1,0 +1,92 @@
+//教材P133，算法5.10 构造哈夫曼树HT,然后先序遍历输出结点权值
+//2022-11-03a
+#include<iostream>
+using namespace std;
+
+//---哈夫曼树的存储结构----//
+typedef struct
+{
+
+
+}HTNode, * HuffmanTree;
+
+
+//----选择两个双亲为零（parent=0），且权值最小的结点，返回它们在HT中的序号s1,s2-----//
+void Select(HuffmanTree HT, int len, int& s1, int& s2)
+{//在编写哈夫曼树的存储结构之后，再将此函数下列已注释化的代码激活
+  /*
+	int i;
+
+	//--查找s1----
+	int min = 0x3f3f3f3f;//用min记录结点比较，最小的权值,先赋予最大值	
+	for (i = 1; i <= len; i++)
+	{//查找权值最小的结点s1
+		if (HT[i].weight < min && HT[i].parent == 0)
+		{
+			min = HT[i].weight;
+			s1 = i;
+		}
+	}//查找s1结束
+
+	int temp = HT[s1].weight;//序号s1的结点权值最小，将原值临时转移存放到temp中，
+	HT[s1].weight = 0x3f3f3f3f;//然后先赋予该结点最大值，防止下面s1被重复选择
+
+
+	//--查找s2----
+	min = 0x3f3f3f3f;//用min记录结点比较，最小的权值,先赋予最大值
+	for (i = 1; i <= len; i++)
+	{//查找权值最小的结点s2
+		if (HT[i].weight < min && HT[i].parent == 0)
+		{
+			min = HT[i].weight;
+			s2 = i;
+		}
+	}//查找s2结束
+
+	HT[s1].weight = temp;//恢复原来的值
+	*/
+}
+
+//--------构造哈夫曼树算法-------------------//
+
+void CreatHuffmanTree(HuffmanTree& HT, int n)
+{//构造哈夫曼树HT
+
+
+ //编写此段算法
+
+
+}													// CreatHuffmanTree
+/**********/
+void PreOrderTraverse(HuffmanTree HT, int i)
+{//先序遍历二叉树HT的递归算法
+ //在编写哈夫曼树的存储结构之后，再将此函数下列已注释化的代码激活
+	/*
+	if (i == 0) return;
+	cout << HT[i].weight << " ";
+	PreOrderTraverse(HT, HT[i].lchild);
+	PreOrderTraverse(HT, HT[i].rchild);
+    
+	*/
+}
+
+
+/**************************************/
+int main()
+{
+	cout << "\n自动化专业《数据结构与算法》-构造哈夫曼树HT, 然后先序遍历输出结点权值2022-11-03a\n\n";
+
+	HuffmanTree HT;
+	int n;
+	cout << "请输入叶子结点的个数：\n";
+	cin >> n;
+	CreatHuffmanTree(HT, n);
+	cout << "哈夫曼树建立完毕！\n\n";
+	//===============================
+	cout << "先序遍历此二叉树的结果为：\n";
+	int m = 2 * n - 1;
+	PreOrderTraverse(HT, m);//先序遍历二叉树HT
+	cout << endl;
+	system("pause");
+	return 0;
+}

@@ -1,0 +1,15 @@
+﻿  main.cpp
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课2 栈、队列、串的模式匹配\实验2. 采用教材P73的算法3.20，链栈实现数制的转换（十进制转八进制）\demo2\main.h(19,9): warning C4005: “OVERFLOW”: 宏重定义
+  (编译源文件“main.cpp”)
+      D:\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(975,13):
+      参见“OVERFLOW”的前一个定义
+  
+  StackNode.cpp
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课2 栈、队列、串的模式匹配\实验2. 采用教材P73的算法3.20，链栈实现数制的转换（十进制转八进制）\demo2\main.h(19,9): warning C4005: “OVERFLOW”: 宏重定义
+  (编译源文件“StackNode.cpp”)
+      D:\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(975,13):
+      参见“OVERFLOW”的前一个定义
+  
+  正在生成代码...
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课2 栈、队列、串的模式匹配\实验2. 采用教材P73的算法3.20，链栈实现数制的转换（十进制转八进制）\demo2\StackNode.cpp(60,1): warning C4715: “GetTop”: 不是所有的控件路径都返回值
+  demo2.vcxproj -> E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课2 栈、队列、串的模式匹配\实验2. 采用教材P73的算法3.20，链栈实现数制的转换（十进制转八进制）\demo2\x64\Debug\demo2.exe

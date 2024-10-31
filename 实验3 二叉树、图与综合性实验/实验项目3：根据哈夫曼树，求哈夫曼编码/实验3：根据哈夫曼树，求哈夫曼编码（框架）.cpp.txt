@@ -1,0 +1,107 @@
+//算法5.11 根据哈夫曼树，求哈夫曼编码2022-11-06a
+#pragma warning(disable:4996)//解决VS对strcpy()函数的使用问题
+#include<iostream>
+#include<iomanip>       //用于控制输出格式
+using namespace std;
+
+//---哈夫曼树的存储结构----
+typedef struct
+{
+	int weight;
+	int parent, lchild, rchild;
+
+}HTNode, * HuffmanTree;
+
+typedef char** HuffmanCode;
+
+//---筛选函数，选择两个双亲为零（parent=0），且权值最小的结点，返回它们在HT中的序号s1,s2-----//
+void Select(HuffmanTree HT, int len, int& s1, int& s2)
+{
+	int i, min1 = 0x3f3f3f3f, min2 = 0x3f3f3f3f;//先赋予最大值
+	for (i = 1; i <= len; i++)
+	{
+		if (HT[i].weight < min1 && HT[i].parent == 0)
+		{
+			min1 = HT[i].weight;
+			s1 = i;
+		}
+	}
+	int temp = HT[s1].weight;//将原值存放起来，然后先赋予最大值，防止s1被重复选择
+	HT[s1].weight = 0x3f3f3f3f;
+	for (i = 1; i <= len; i++)
+	{
+		if (HT[i].weight < min2 && HT[i].parent == 0)
+		{
+			min2 = HT[i].weight;
+			s2 = i;
+		}
+	}
+	HT[s1].weight = temp;//恢复原来的值
+}
+
+//用算法5.10构造哈夫曼树
+void CreatHuffmanTree(HuffmanTree& HT, int n)
+{//构造哈夫曼树HT
+
+
+	
+	//编写此段代码
+
+
+
+}// CreatHuffmanTree
+
+
+//----用算法5.11根据哈夫曼树求哈夫曼编码-----
+void CreatHuffmanCode(HuffmanTree HT, HuffmanCode& HC, int n)
+{//从叶子到根逆向求每个字符的赫夫曼编码，存储在编码表HC中
+	
+
+
+	//编写此段代码
+
+
+
+
+}// CreatHuffanCode
+
+//-----输出哈夫曼编码------------------
+void show(HuffmanTree HT, HuffmanCode HC)
+{  
+	int n = _msize(HC) / sizeof(HC[0]) - 1; //_msize()函数可获取动态数组分配内存的长度,减1是因为数组下标0的元素不用
+	 //哈夫曼编码数量为n个                  // sizeof(HC[0])可获取每个数组元素分配内存的长度
+
+	cout << "\n5.求得" << n << "个哈夫曼编码:\n" << endl;
+	for (int i = 1; i <= n; i++)
+		cout << "权重为" << right << setw(3) << HT[i].weight << " 的字符编码为 " << HC[i] << endl;
+}
+
+
+int main()
+{
+	cout << "-----------------------------------------------------------------\n";
+	cout << "自动化专业《数据结构与算法》\n";
+	cout << "采用教材P132算法5.10和P135算法5.11，构造哈夫曼树，据此求哈夫曼编码2022-11-06a\n";
+	cout << "(可采用教材P136例5.3进行验证)\n";
+	cout << "------------------------------------------------------------------\n\n";
+	
+	//HT与HC不要混淆，认真看教材，搞清楚它们的区别
+	HuffmanTree HT;
+	HuffmanCode HC;
+	
+	int n;//叶子结点个数
+	
+	cout << "1.请输入叶子结点的个数：\n";
+	cin >> n;											//输入哈夫曼树的叶子结点个数
+	
+	CreatHuffmanTree(HT, n);
+
+	cout << "\n3.采用算法5.10构造哈夫曼树完毕，接下来进行哈夫曼编码\n";	
+	CreatHuffmanCode(HT, HC, n);
+
+	cout << "\n4.采用算法5.11进行哈夫曼编码完毕，接下来输出哈夫曼编码\n";
+	show(HT, HC);
+	cout << "\n哈夫曼编码输出完毕\n\n";
+
+	return 0;
+}

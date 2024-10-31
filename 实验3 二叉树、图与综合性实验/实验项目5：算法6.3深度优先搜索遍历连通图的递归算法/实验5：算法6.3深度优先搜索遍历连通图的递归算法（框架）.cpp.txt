@@ -1,0 +1,140 @@
+//算法6.3　深度优先搜索遍历连通图的递归算法2022-11-13a
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+#define MVNum 100									//最大顶点数
+typedef string VerTexType;							//假设顶点的数据类型为字符串型 
+typedef int ArcType;                 				//假设边的权值类型为整型 
+
+//-----图的邻接矩阵存储表示-----
+typedef struct {
+	VerTexType vexs[MVNum];            				//顶点表 
+	ArcType arcs[MVNum][MVNum];      				//邻接矩阵 
+	int vexnum, arcnum;                				//图的当前点数和边数 
+}Graph;
+
+bool visited[MVNum];  //顶点访问标志（数组），应初始化为"false" 
+                      //访问标志的定义不能放在算法6.3函数DFS(Graph G, int v) 内，因为检查v的邻接点的两个基本操作也要使用
+
+int LocateVex(Graph G, VerTexType v) {
+	//确定点v在G中的位置
+	for (int i = 0; i < G.vexnum; ++i)
+		if (G.vexs[i] == v)
+			return i;
+	return -1;//注意:C语言数组是从位置0开始存放元素的，若无该顶点，不能返回0，应返回负值
+}//LocateVex
+
+void CreateUDG(Graph &G) 
+{//采用邻接矩阵表示法，创建无向图G
+  
+
+	
+	/*编写此段,注意：
+	   1.用教材P149的算法6.1改写;
+	   2.初始化所有边的权值为0;
+	   3.输入一条边时，其依附的权值w不通过键盘输入，改为默认=1;	   
+	*/
+
+
+}//CreateUDG
+
+void DISP_AMG(Graph G)
+{//显示无向图的邻接矩阵
+	int i, j; //邻接矩阵行,列
+	for (i = 0; i < G.vexnum; ++i)
+	{//输出图G的邻接矩阵
+		for (j = 0; j < G.vexnum; ++j) {
+			if (j != G.vexnum - 1) {//如果是第i行最后一列，输出后换行
+				if (G.arcs[i][j] != 0)
+					cout << G.arcs[i][j] << "\t";
+				else
+					cout << 0 << "\t";
+			}
+			else {
+				if (G.arcs[i][j] != 0)
+					cout << G.arcs[i][j] << endl;//输出后换行
+				else
+					cout << 0 << endl;//输出后换行
+			}
+		}
+	}//for
+}
+
+
+ //--------------检查v的邻接点(两个基本操作)------------------
+int FirstAdjVex(Graph G, int v)
+{//检查v的第一个邻接点 
+	int i;
+	for (i = 0; i < G.vexnum; ++i) {
+		if (G.arcs[v][i] !=0 && visited[i] == false)
+			return i;
+	}
+	return -1;//注意:C语言数组是从位置0开始存放元素的，若无邻结点，不能返回0，应返回负值
+}//FirstAdjVex
+
+int NextAdjVex(Graph G, int v, int w)
+{//检查v的相对于w的下一个邻接点 
+	int i;
+	for (i = w; i < G.vexnum; ++i) {
+		if (G.arcs[v][i] != 0 && visited[i] == false)
+			return i;
+	}
+	return -1;//注意:C语言数组是从位置0开始存放元素的，若无邻结点，不能返回0，应返回负值
+}//NextAdjVex
+
+//--------算法6.3　深度优先搜索遍历连通图的递归算法----------
+void DFS(Graph G, int v) 
+{//从第v个顶点出发递归地深度优先遍历图G 
+
+
+
+	//编写此段
+
+
+
+
+}//DFS
+
+
+int main() {
+	cout << "**************自动化专业《数据结构与算法》2022-11-13a************\n";	
+	cout << "********教材P156算法6.3深度优先搜索遍历连通图的递归算法**********\n" ;	
+	cout << "注意:\n";
+	cout << "1.可在“实验:算法6.1采用邻接矩阵表示法创建无向网”基础上做此实验;\n";
+	cout << "2.规定无向图邻接矩阵中有连接的边权值为1，无连接权值为0;\n";
+	cout << "3.可以教材图6.1（b)和图6.17（a)的无向图为实验对象，测试算法正确性;\n";
+	cout << "4.教材P155图6.17（a)有两个v8,是印刷错误，纠正右边的v8为v7\n";
+	cout << "5.在纸上将各条边依附的顶点对列出来，再输入电脑，可避免输入错误.\n";
+	cout << "*****************************************************************\n\n";
+	
+	
+	
+	
+	//主函数需要自己编写完善，下面给出的是框架提示
+
+	
+	
+	
+	Graph G;      //定义G为AMGraph类型
+	VerTexType c; //起始顶点c
+
+				  //采用邻接矩阵表示法，创建无向网G 
+	
+	cout << "\n无向图G创建完成！\n\n";
+	
+	cout << "此无向图的邻接矩阵如下\n\n";	
+	cout << "\n请输入遍历连通图的起始顶点：";	
+	
+
+	            //查找起始顶点
+
+
+	cout << "\n深度优先搜索遍历连通图结果：\n" ;
+	    
+	          //从第v个顶点出发递归地深度优先遍历图G 
+
+	
+	return 0;
+}//main

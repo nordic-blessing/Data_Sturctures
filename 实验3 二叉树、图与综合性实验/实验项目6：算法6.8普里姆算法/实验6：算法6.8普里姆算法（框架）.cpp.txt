@@ -1,0 +1,95 @@
+//算法6.8普里姆算法2022-11-15a
+#include <iostream>
+#include <string>
+using namespace std;
+
+#define MVNum 100          //图中顶点数的最大值        
+#define MaxInt 32767       //表示极大值，即∞
+
+
+//- - - - -图的邻接表存储表示- - - - - 						
+typedef string VerTexType;                  //假设顶点的数据类型为字符串型 
+typedef int ArcType;                  		//假设边的权值类型为整型 
+typedef struct
+{
+	VerTexType vexs[MVNum];            		//顶点表 
+	ArcType arcs[MVNum][MVNum];      		//邻接矩阵 
+	int vexnum, arcnum;                		//图的当前点数和边数 
+}AMGraph;
+
+//定义辅助数组，用来记录从顶点集U到V-U的权值最小的边
+struct
+{
+	VerTexType adjvex;						//最小边在U中的那个顶点
+	ArcType lowcost;						//最小边上的权值
+}closedge[MVNum];
+
+
+int LocateVex(AMGraph G, VerTexType v)
+{//确定点v在G中的位置
+	for (int i = 0; i < G.vexnum; ++i)
+		if (G.vexs[i] == v)
+			return i;
+	return -1;
+}//LocateVex
+
+void CreateUDN(AMGraph &G)
+{//采用邻接矩阵表示法，创建无向网G 
+	
+
+
+
+	//编写此段
+
+
+
+
+}//CreateUDN 
+
+int Min(AMGraph G)
+{//返回边权值最小的连接顶点
+	int i;
+	int index = -1;//搜寻的顶点序号初始化为-1
+	int min = MaxInt;
+	for (i = 0; i < G.vexnum; ++i)
+	{
+		if (closedge[i].lowcost != 0 && closedge[i].lowcost < min)// 排除losedge[i].lowcost == 0（为已并入U集的顶点）
+		{//查找最小的边权值，返回该边在U集之外的连接顶点序号i
+			min = closedge[i].lowcost;
+			index = i;
+		}
+	}//for
+	return index;
+}//Min
+
+void MiniSpanTree_Prim(AMGraph G, VerTexType u)
+{//普里姆算法
+ //无向网G以邻接矩阵形式存储，从顶点u出发构造G的最小生成树T，输出T的各条边  
+
+	
+
+
+}//MiniSpanTree_Prim 
+
+int main() {
+	cout << "***自动化专业《数据结构与算法》2022-11-15a***\n";
+	cout << "*************算法6.8普里姆算法***************\n";
+	cout << "可用教材P160图6.19测试验证\n\n";
+
+	AMGraph G;     //定义图G用邻接矩阵表示
+
+	//以下提供主函数框架性提示，内容需自己编写充实
+
+	cout << "先创建无向图\n";	              
+
+	cout << "\n无向图G创建完成！\n\n";
+
+	cout << "******利用普里姆算法构造最小生成树******\n";
+	
+	cout << "请输入构造最小生成树的起始顶点:";
+	
+	cout << "\n最小生成树: \n";
+	
+
+	return 0;
+}//main

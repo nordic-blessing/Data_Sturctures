@@ -1,0 +1,64 @@
+//算法6.1　采用邻接矩阵表示法创建无向网2022-11-12a
+
+#include <iostream>
+using namespace std;
+
+#define MaxInt 32767                    	//表示极大值，即∞
+#define MVNum 100                       	//最大顶点数
+#define OK 1	
+
+typedef char VerTexType;              		//假设顶点的数据类型为字符型 
+typedef int ArcType;                  		//假设边的权值类型为整型 
+
+//- - - - -图的邻接矩阵存储表示- - - - -
+typedef struct {
+	VerTexType vexs[MVNum];            		//顶点表 
+	ArcType arcs[MVNum][MVNum];      		//邻接矩阵 
+	int vexnum, arcnum;                		//图的当前点数和边数 
+}AMGraph;
+
+int LocateVex(AMGraph G, VerTexType v) 
+{//确定点v在G中的位置
+	
+
+}//LocateVex
+
+int CreateUDN(AMGraph &G) 
+{//采用邻接矩阵表示法，创建无向网G 
+
+
+	return OK;
+}//CreateUDN 
+
+int main() {
+	cout << "**********自动化专业《数据结构与算法》2022-11-12a************\n";
+	cout << "**********教材P149算法6.1采用邻接矩阵表示法创建无向网*********\n\n";
+	cout << "1.自己绘制一张无向网（不少于4个顶点，权值自定），笔绘邻接矩阵;\n";
+	cout << "2.编程创建该图的邻接矩阵，并输出验证是否与笔绘矩阵一致\n\n";
+	cout << "-------------------------------------------------------------\n\n";
+
+	AMGraph G;    //定义G为AMGraph类型
+	CreateUDN(G);//采用邻接矩阵表示法，创建无向网G 
+
+	cout << "\n****该邻接矩阵表示法创建的无向网如下*****\n\n";
+	int i, j; //邻接矩阵行,列
+	for (i = 0; i < G.vexnum; ++i) 
+	{//输出图G的邻接矩阵
+		for (j = 0; j < G.vexnum; ++j) {
+			if (j != G.vexnum - 1) {//如果是第i行最后一列，输出后换行
+				if (G.arcs[i][j] != MaxInt)
+					cout << G.arcs[i][j] << "\t";
+				else
+					cout << "∞" << "\t";
+			}
+			else {
+				if (G.arcs[i][j] != MaxInt)
+					cout << G.arcs[i][j] << endl;//输出后换行
+				else
+					cout << "∞" << endl;//输出后换行
+			}
+		}
+	}//for
+	cout << endl;
+	return 0;
+}//main

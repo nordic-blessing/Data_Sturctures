@@ -1,0 +1,41 @@
+/*二叉树的创建（先序）与遍历（中序）2022-10-30c*/
+
+//算法5.1 中序遍历的递归算法
+#include<iostream>
+using namespace std;
+typedef struct BiNode 
+{//二叉链表定义
+	char data;
+	struct BiNode *lchild, *rchild;
+}BiTNode, *BiTree;
+
+//用算法5.3 先序遍历的顺序建立二叉链表
+void CreateBiTree(BiTree &T)
+{//按先序次序输入二叉树中结点的值（一个字符），创建二叉链表表示的二叉树T
+
+	
+
+}//CreateBiTree
+
+void InOrderTraverse(BiTree T) 
+{//中序遍历二叉树T的递归算法
+	
+
+}
+
+int main() {
+	cout << "自动化专业《数据结构与算法》二叉树的创建与遍历 2022-10-30\n";
+	cout << "参考教材P120,算法5.3";
+	cout << "按先序次序输入二叉树中结点的值（一个字符，若是#表示空树）\n";
+	cout << "\n比如，按照教材P120图5.13的先序次序输入：A B # C D # # E # # F # G H # # #\n";
+	
+	BiTree T;
+	cout << "\n请输入建立二叉链表的序列(先序次序)：\n";
+	CreateBiTree(T);
+	cout << "建二叉树完毕\n";
+	cout << "\n参考教材P117,算法5.1,中序遍历的结果为：\n";
+	InOrderTraverse(T);
+	cout << "\n中序遍历完毕\n" << endl;
+	
+	return 0;
+}
