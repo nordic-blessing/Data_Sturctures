@@ -1,0 +1,3 @@
+﻿  Huffman.cpp
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验3 二叉树、图与综合性实验\实验项目2：构造哈夫曼树（存储结构为数组），然后先序遍历输出结点权值\demo2\Huffman.cpp(118,8): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  demo3.vcxproj -> E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验3 二叉树、图与综合性实验\实验项目3：根据哈夫曼树，求哈夫曼编码\demo3\x64\Debug\demo3.exe
