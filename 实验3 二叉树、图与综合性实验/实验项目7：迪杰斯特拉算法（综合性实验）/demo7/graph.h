@@ -22,7 +22,7 @@ typedef struct {
 }AMGraph;
 //=======================END======================//
 
-int Locate_Vex(AMGraph G, VerTexType u);
+int Locate_Vex(AMGraph G, char u);
 int CreateUDN(AMGraph& G);
 int CreateDN(AMGraph& G);
 int showUDN(AMGraph G);

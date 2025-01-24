@@ -1,0 +1,80 @@
+﻿  main.c
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(91,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(104,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(117,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(152,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(171,40): warning C4474: printf: 格式字符串中传递的参数太多
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(171,40):
+      占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(172,9): warning C4013: “gets”未定义；假设外部返回 int
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(191,60): warning C4474: printf: 格式字符串中传递的参数太多
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(191,60):
+      占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(165,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(167,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(185,9): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(192,13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(205,17): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(207,13): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(246,40): warning C4474: printf: 格式字符串中传递的参数太多
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(246,40):
+      占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(230,15): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(240,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(242,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(258,9): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(259,9): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(262,13): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(276,17): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(278,13): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(320,12): error C2001: 常量中有换行符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(321,5): error C2146: 语法错误: 缺少“)”(在标识符“n”的前面)
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(355,15): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(469,125): warning C4474: printf: 格式字符串中传递的参数太多
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(469,125):
+      占位符和其参数预计 1 可变参数，但提供的却是 2 参数
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(475,20): error C2001: 常量中有换行符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(476,9): error C2143: 语法错误: 缺少“)”(在“}”的前面)
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(475,20): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(475,20):
+      占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(475,20):
+      缺失的可变参数 1 为格式字符串“%d”所需
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(485,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(545,125): warning C4474: printf: 格式字符串中传递的参数太多
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(545,125):
+      占位符和其参数预计 1 可变参数，但提供的却是 2 参数
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(552,20): error C2001: 常量中有换行符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(553,9): error C2143: 语法错误: 缺少“)”(在“}”的前面)
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(552,20): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(552,20):
+      占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(552,20):
+      缺失的可变参数 1 为格式字符串“%s”所需
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(562,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(583,60): warning C4474: printf: 格式字符串中传递的参数太多
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(583,60):
+      占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(627,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(658,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(681,60): warning C4474: printf: 格式字符串中传递的参数太多
+      E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(681,60):
+      占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+  
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(753,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(837,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(921,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(943,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(950,27): error C2065: “score_num”: 未声明的标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(950,69): error C2065: “score_num”: 未声明的标识符
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(965,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\myscu\大二上\数据结构与算法\Data_Sturctures\实验课4 课程设计\c-program-design\银行用户管理系统\main.c(985,1): error C1004: 发现意外的文件尾

@@ -142,20 +142,20 @@ void ShortestPath_DIJ(AMGraph G, int v0) {
 		int min = INT16_MAX;
 		int v = v0;
 		for (int w = 0; w < n; w++) {
-			if (!S[w] && D[w] < INT16_MAX) {
+			if (!S[w] && D[w] < min) {
 				v = w;
 				min = D[w];
 			}
 		}
 		if (v == v0)
 			return;
-			S[v] = true;
-			for (int w = 0; w < n; w++) {
-				if (!S[w] && (D[v] + G.arcs[v][w] < D[w])) {
-					D[w] = D[v] + G.arcs[v][w];
-					Path[w] = v;
-				}
+		S[v] = true;
+		for (int w = 0; w < n; w++) {
+			if (!S[w] && (D[v] + G.arcs[v][w] < D[w])) {
+				D[w] = D[v] + G.arcs[v][w];
+				Path[w] = v;
 			}
+		}
 	}
 }
 
@@ -164,8 +164,10 @@ void ShortestPath_DIJ(AMGraph G, int v0) {
  * @param v		目标点
  */
 int show_ShortestPath(AMGraph G,int v) {
-	if (D[v] >= INT16_MAX)
+	if (D[v] >= INT16_MAX) {
+		cout << "路径不可到达" << endl;
 		return -1;
+	}
 	if (Path[v]) {
 		show_ShortestPath(G, Path[v]);
 	}

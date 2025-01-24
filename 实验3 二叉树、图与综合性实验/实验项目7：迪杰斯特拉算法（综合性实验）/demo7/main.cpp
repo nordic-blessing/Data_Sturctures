@@ -16,12 +16,14 @@ int main() {
 			while (1) {
 				cout << "请输入终点：";
 				cin >> final;
+				cout << start << " ";
 				int i = show_ShortestPath(G, Locate_Vex(G, final));
 				cout << endl;
 				if (i != -1)
 					cout << "最短路径的距离为：" << i << endl;
 				else
 					cout << "不存在该路线" << endl;
+				cout << endl;
 			}
 		}
 		cout << "按任意键继续操作..." << endl;
